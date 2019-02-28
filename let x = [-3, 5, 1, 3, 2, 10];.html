@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let co = false;
+    let vitri = 0;
+    let x = [-3, 5, 1, 3, 2, 10];
+    let N = parseInt(prompt("Nhap 1 so"));
+    for (let i = 0; i <= x.length; i++) {
+        if (N == x[i]) {
+            co = true;
+            vitri = i;
+
+        }
+    }
+    if (co) {
+        document.write("Có " + N + "trong mang tai x[" + vitri + "]")
+    } else document.write("Khong co gia tri nay trong mang");
+</script>
+
+</body>
+</html>
